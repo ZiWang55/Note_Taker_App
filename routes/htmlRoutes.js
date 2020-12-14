@@ -1,5 +1,5 @@
 // Dependencies
-var path = require("path");
+const path = require("path");
 
 // Routing
 module.exports = function(app) {

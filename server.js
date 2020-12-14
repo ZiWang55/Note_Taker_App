@@ -10,6 +10,7 @@ app.use(express.json());
 
 //Router
 require("./routes/htmlRoutes")(app);
+require("./routes/apiRoutes")(app);
 
 //Listener
 app.listen(PORT, function() {

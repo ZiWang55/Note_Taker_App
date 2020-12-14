@@ -11,3 +11,4 @@ app.post("/api/notes", function (req, res) {
     savedNotesData.push(req.body);
     res.json(true);
 })
+
