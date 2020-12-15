@@ -14,7 +14,7 @@ app.use(express.urlencoded({
   extended: true
 }));
 app.use(express.json());
-app.use(express["static"]("./Develop/public")); //Router
+app.use(express["static"]("./public")); //Router
 
 require("./routes/htmlRoutes")(app);
 

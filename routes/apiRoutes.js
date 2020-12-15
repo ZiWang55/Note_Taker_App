@@ -1,7 +1,7 @@
 //Dependency
 const fs = require("fs");
 //Exchanging JSON data into JS object
-let data = JSON.parse(fs.readFileSync("./Develop/db/db.json", "utf8"));
+let data = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
 //Load data
 // const savedNotesData = require("../Develop/db/db.json");
 //Routing
@@ -24,7 +24,7 @@ module.exports = function (app) {
     data.push(newNote);
 
     fs.writeFileSync(
-      "./Develop/db/db.json",
+      "./db/db.json",
       JSON.stringify(data),
       function (error) {
         if (error) throw error;
@@ -44,7 +44,7 @@ module.exports = function (app) {
       currentNote.id = newId.toString();
       newId++;
     }
-    fs.writeFileSync("./Develop/db/db.json", JSON.stringify(data));
+    fs.writeFileSync("./db/db.json", JSON.stringify(data));
     res.json(data);
   });
 };

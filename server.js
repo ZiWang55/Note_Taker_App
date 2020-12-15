@@ -8,7 +8,7 @@ var PORT = process.env.PORT || 3000;
 // Set up express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("./Develop/public"));
+app.use(express.static("./public"));
 
 //Router
 require("./routes/htmlRoutes")(app);
