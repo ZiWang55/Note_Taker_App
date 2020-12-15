@@ -1,80 +1,86 @@
-# Unit 11 Express Homework: Note Taker
-
+<h1 align="center">Note Taking App Using Node.js and express.js</h1>
+  
+<p align="center">
+    <img src="https://img.shields.io/github/repo-size/ZiWang55/Note_Taker_App" />
+    <img src="https://img.shields.io/github/languages/top/ZiWang55/Note_Taker_App"  />
+    <img src="https://img.shields.io/github/issues/ZiWang55/Note_Taker_App" />
+    <img src="https://img.shields.io/github/last-commit/ZiWang55/Note_Taker_App" >
+</p>
+  
+<p align="center">
+      <img src="https://img.shields.io/badge/Javascript-yellow" />
+    <img src="https://img.shields.io/badge/jQuery-blue"  />
+    <img src="https://img.shields.io/badge/-node.js-green" />
+    <img src="https://img.shields.io/badge/-express-red" >
+    <img src="https://img.shields.io/badge/-jest-lightgrey" />
+    <img src="https://img.shields.io/badge/-json-orange" />
+</p>
+   
 ## Description
 
-Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
+🔍 A node.js express.js application that uses user input to create, store and delete notes.
 
-* The application frontend has already been created, it's your job to build the backend and connect the two.
+💻 Below is the picture of the application:
 
-* The following HTML routes should be created:
+![Note Taker App](./src/)
 
-  * GET `/notes` - Should return the `notes.html` file.
-
-  * GET `*` - Should return the `index.html` file
-
-* The application should have a `db.json` file on the backend that will be used to store and retrieve notes using the `fs` module.
-
-* The following API routes should be created:
-
-  * GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
-
-  * POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
-
-  * DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+🎥 The full movie file showing functionality of the application can be found [here](./src/)
 
 ## User Story
 
-AS A user, I want to be able to write and save notes
-
-I WANT to be able to delete notes I've written before
-
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
-
-## Business Context
-
-For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
+```
+AS A business owner
+I WANT to write and save notes
+SO THAT I keep track of tasks and take notes
+```
 
 ## Acceptance Criteria
 
-Application should allow users to create and save notes.
+```
+GIVEN a note-taking application
+WHEN I open the Note Taker
+THEN I am presented with a landing page with a button to notes pages
+WHEN I click on the button start note
+THEN I am presented with a page of existing notes on the left column, plus empty fields to enter on the right
+WHEN I enter a new note title and the note text
+THEN a Save icon appears in the nav at the top of the page
+WHEN I click on the Save icon
+THEN note is saved and displayed on the left column
+WHEN I click on the note from the left column
+THEN the note will appear on the right
+WHEN I click on the write icon
+THEN I am presented with empty field to enter new note title and note text
+```
 
-Application should allow users to view previously saved notes.
+## Table of Contents
 
-Application should allow users to delete previously saved notes.
+- [Description](#description)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Table of Contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Questions](#questions)
 
-## Deploying the App
+## Installation
 
-You will not be able to deploy your server side code on GitHub pages. This app should be deployed on Heroku. Carefully follow the [Heroku Guide](../04-Important/HerokuGuide.md) for getting your app deployed on Heroku.
+💾
 
-- - -
+`npm init`
 
-## Commit Early and Often
+`npm install express`
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+## Usage
 
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+💻
 
-* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+`node server.js`
 
-Follow these guidelines for committing:
+## Contributing
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+👨 [Zi Wang](https://github.com/ZiWang55)
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+## Questions
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL of the deployed application. This should be the link to the url provided by Heroku. Be sure not to submit a link to the Heroku dashboard.
-
-* The URL of the GitHub repository
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+✉️ Contact me with any questions: [email](mailto:ziwang55@gmail.com) , [GitHub](https://github.com/ZiWang55)<br />
