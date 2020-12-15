@@ -8,7 +8,7 @@
 </p>
   
 <p align="center">
-      <img src="https://img.shields.io/badge/Javascript-yellow" />
+    <img src="https://img.shields.io/badge/Javascript-yellow" />
     <img src="https://img.shields.io/badge/jQuery-blue"  />
     <img src="https://img.shields.io/badge/-node.js-green" />
     <img src="https://img.shields.io/badge/-express-red" >
@@ -20,11 +20,9 @@
 
 🔍 A node.js express.js application that uses user input to create, store and delete notes.
 
-💻 Below is the picture of the application:
+💻 Below is the demo of the application:
 
-![Note Taker App](./src/)
-
-🎥 The full movie file showing functionality of the application can be found [here](./src/)
+![Note Taker App](./src/notetakerdemo.gif)
 
 ## User Story
 
