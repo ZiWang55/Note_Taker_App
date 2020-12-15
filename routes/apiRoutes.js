@@ -1,12 +1,12 @@
 //Dependency
 const fs = require("fs");
 //Exchanging JSON data into JS object
-var data = JSON.parse(fs.readFileSync("./Develop/db/db.json", "utf8"));
+let data = JSON.parse(fs.readFileSync("./Develop/db/db.json", "utf8"));
 //Load data
 // const savedNotesData = require("../Develop/db/db.json");
 //Routing
 module.exports = function (app) {
-    //Api get
+  //Api get
   app.get("/api/notes", function (req, res) {
     res.json(data);
   });
@@ -18,14 +18,18 @@ module.exports = function (app) {
   //Api post requests
   app.post("/api/notes", function (req, res) {
     let newNote = req.body;
-    let uniqueId = (data.length).toString();
+    let uniqueId = data.length.toString();
     // console.log(uniqueId);
     newNote.id = uniqueId;
     data.push(newNote);
 
-    fs.writeFileSync("./Develop/db/db.json", JSON.stringify(data), function(error) {
-        if (error) throw (error);
-    } );
+    fs.writeFileSync(
+      "./Develop/db/db.json",
+      JSON.stringify(data),
+      function (error) {
+        if (error) throw error;
+      }
+    );
     res.json(data);
   });
 
