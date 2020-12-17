@@ -20,6 +20,7 @@
 
 🔍 A node.js express.js application that uses user input to create, store and delete notes.
 
+## Link to app
 [Heroku Live Link](https://sleepy-woodland-88586.herokuapp.com/)
 
 💻 Below is the demo of the application:
